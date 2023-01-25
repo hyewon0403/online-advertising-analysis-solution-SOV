@@ -1,15 +1,25 @@
-## 온라인 광고 분석 솔루션 ‘SOV’ 런칭
+## 온라인 광고 분석 솔루션 ‘SOV’ 구축
 
-### 프로젝트 소개
-‘SOV’는 **머신러닝을 기반으로 광고 트렌드를 분석하여 제공하는 솔루션**입니다. 
-광고주별 온라인 광고 정보를 모니터링할 수 있도록 실시간으로 수집된 광고 소재와 미디어렙사의 실 집행 데이터를 바탕으로 추정된 광고비 데이터를 제공합니다. 
-또한, 솔루션 데이터를 기반으로 분석 리포트를 정기적으로 제작 및 배포했습니다.
+### 프로젝트 개요
+- 목적: 자체 데이터 분석 솔루션 개발, 광고 수집 업무 자동화
+- 기간: 2018. 3 ~ 2019. 10(1년 8개월)
+- 역할: 서비스 기획, 수집 데이터 선정, 데이터 전처리, 머신러닝 모형 구축, 분석 리포트 제작, 유저 행동 분석
+- Skills: R(data.table, DBI, RMySQL, plyr 등), MySQL, Google Analytics
 
-### 데이터 분석 및 광고비 추정 모형 구축
-[R 활용 광고비 추정 모형 구축](https://github.com/hyewon0403/online-advertising-analysis-solution-SOV/blob/master/SOV_naver_brandingDA.R)
+### 추진 배경
+기존에 사용하던 외부 데이터 분석 솔루션의 이용료가 약 2배 가까이 증가하여 대체할 분석 솔루션이 필요했습니다. 
+또한, 광고 수집 업무로 많은 업무 리소스가 발생하여 이를 개선할 수 있는 방안이 필요한 상황이었습니다.
+기존 광고 수집 방식은 광고 지면마다 원하는 광고가 나올때까지 새로고침하는 방식으로 많은 업무 시간이 할애되었습니다.
+이를 해결하고자 광고 정보를 실시간으로 수집하고, **수집된 소재를 바탕으로 광고비를 추정하여 제공하는 솔루션**을 기획하게 되었습니다.
 
-### 소개서
-[SOV 소개서 pdf](https://github.com/hyewon0403/online-advertising-analysis-solution-SOV/blob/master/SOV%20%EC%86%8C%EA%B0%9C%EC%84%9C.pdf)
+### 진행 과정
+기존에 사용하던 외부 솔루션은 제공하는 매체 데이터는 방대하지만 논타겟팅 광고만 수집하여 정확도가 떨어진다는 단점이 있었습니다.
+그래서 **자체 솔루션의 차별점을 정확도**로 두고, **논타겟팅뿐 아니라 성·연령 타겟팅이 적용된 광고도 함께 수집**하였습니다. 
+크롤링을 통해 네이버, 카카오, 유튜브 등 주요 광고 지면 데이터를 수집했고, 수집된 소재는 데이터 라벨링을 통해 광고주를 분류했습니다.
+분류된 광고주별 소재 수와 성·연령 타겟팅을 활용하여 광고비 추정 모형을 구축했습니다. 
+이를 통해 경쟁사 대비 최대 30%의 정확도를 개선할 수 있었습니다.
 
-### 분석 리포트
-[분석 리포트 pdf](https://github.com/hyewon0403/online-advertising-analysis-solution-SOV/blob/master/2020%20%EC%98%A8%EB%9D%BC%EC%9D%B8%20%EA%B4%91%EA%B3%A0%EB%B9%84%20%EA%B2%B0%EC%82%B0.pdf)
+### 파일 링크
+[#1. R을 활용한 광고비 추정 모형 구축](https://github.com/hyewon0403/online-advertising-analysis-solution-SOV/blob/master/SOV_naver_brandingDA.R)\
+[#2. SOV 소개서](https://github.com/hyewon0403/online-advertising-analysis-solution-SOV/blob/master/SOV%20%EC%86%8C%EA%B0%9C%EC%84%9C.pdf)\
+[#3. 분석 리포트](https://github.com/hyewon0403/online-advertising-analysis-solution-SOV/blob/master/2020%20%EC%98%A8%EB%9D%BC%EC%9D%B8%20%EA%B4%91%EA%B3%A0%EB%B9%84%20%EA%B2%B0%EC%82%B0.pdf)
