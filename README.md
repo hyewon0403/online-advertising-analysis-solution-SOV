@@ -4,7 +4,7 @@
 - 목적: **자체 데이터 분석 솔루션 개발, 광고 수집 업무 자동화**
 - 기간: 2018. 3 ~ 2019. 10(1년 8개월)
 - 역할: 서비스 기획, 수집 데이터 선정, 데이터 전처리, 머신러닝 모형 구축
-- Skills: R(data.table, DBI, RMySQL, plyr 등), MySQL, Google Analytics
+- Skills: R(data.table, DBI, RMySQL, plyr 등), MySQL
 
 ### 추진 배경
 기존에 사용하던 외부 데이터 분석 솔루션의 이용료가 약 2배 가까이 증가하여 대체할 분석 솔루션이 필요했습니다. 
